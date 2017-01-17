@@ -27,3 +27,46 @@ $(document).ready(function(){
 });
 
 
+//$('#ci').on('change', function(evento){
+//    // primero recuperamos el archivo subido
+//    var cedula = $(this)[0].files[0];
+//
+//    // creamos un FileReader
+//    // FileReader es un objeto de JS para leer archivos
+//    var reader = new FileReader();
+//
+//    // le decimos al filereader qué hacer cuando termine de cargar
+//    reader.onload = function(efr) {
+//        $('#cedula img').attr('src', efr.target.result);
+//    }
+//    // sólo queda cargar la imagen
+//    reader.readAsDataURL(cedula);
+//});
+//
+//
+//$('#submitCi').on('submit', function(es){
+//    // primero evitamos que se envie el formulario
+//    es.preventDefault();
+//
+//    // pescamos archivo de la imagen
+//    var cedula = $('#ci')[0].files[0];
+//
+//    // creamos FileReader
+//    var reader = new FileReader();
+//
+//    // le decimos al filereader que hacer cuando termine de cargar
+//    reader.onloadend = function(efr) {
+//        var datos_imagen = reader.result;
+//        // se guarda imagen en localStorage
+//        localStorage.setItem('cedula', datos_imagen);
+//        Materialize.toast('<span>Imagen guardada con éxito !</span>', 2000);
+//    }
+//
+//    // finalmente leemos la imagen
+//    reader.readAsDataURL(cedula);
+//});
+
+
+
+
+

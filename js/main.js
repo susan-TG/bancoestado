@@ -1,4 +1,6 @@
 
+
+
 function convertImageToCanvas() {
   var canvas = document.createElement("canvas");
   canvas.width = image.width;
