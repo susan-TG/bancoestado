@@ -38,87 +38,36 @@
 			<div class="row">
 				<div class="col s12 col m4 offset-m4 center-align">
 					<div>
-						<h4 id="nombre-cliente">Paulina Buhrle</h4>
-						<h5 id="rut-cliente">Rut: 15.360.645-5</h5>
+						<h4 id="nombre-cliente"></h4>
+						<h5 id="rut-cliente"></h5>
 					</div>
 				</div>
 			</div>
-			<!--btn ci-->
 			<div class="row">
-				<div class="col s12 col m4 offset-m4">
-					<form action="#">
-					    <div class="file-field input-field">
-					      <div class="btn">
-					        <span>Cédula de Identidad</span>
-					        <input type="file" multiple>
-					      </div>
-					      <div class="file-path-wrapper">
 
-					      </div>
-					    </div>
-					</form>
-				</div>
-			</div>
-			<!--btn dress-->
-			<div class="row">
-				<div class="col s12 col m4 offset-m4">
-					<form action="#">
-					    <div class="file-field input-field">
-					      <div class="btn">
-					        <span>Domicilio</span>
-					        <input type="file" multiple>
-					      </div>
-					      <div class="file-path-wrapper">
-					      	<input class="file-path validate" type="text" placeholder="Agregar archivo domicilio" id="domicilio">
-					      </div>
-					    </div>
-					</form>
-				</div>
-			</div>
-			<!--btn cash-->
-			<div class="row">
-				<div class="col s12 col m4 offset-m4">
-					<div class="btn">
-				        <span>Renta</span>
+				<div class="col s12 col m4 offset-m4 center-align">
+					<div>	
+					<p class="left-align"><strong>Cedula de identidad:</strong></p>	
+						<input type="file" id="files" name="files[]" />
+							<br />
+						<output id="list"></output>
 					</div>
-					<form action="#">
-					    <div class="file-field input-field">
-						    <div>
-						        <i class="material-icons">note_add</i>
-						        <input type="file">
-						    </div>
-						    <div class="file-path-wrapper">
-						        <input class="file-path validate" type="text" placeholder="archivo renta 1" id="renta1">
-						    </div>
-					    </div>
-					</form>
-					<form action="#">
-					    <div class="file-field input-field">
-					      	<div>
-						        <i class="material-icons">note_add</i>
-						        <input type="file">
-					      	</div>
-						    <div class="file-path-wrapper">
-						      	<input class="file-path validate" type="text" placeholder="archivo renta 2" id="renta2">
-						    </div>
-						</div>
-					</form>
-				  	<form action="#">
-					    <div class="file-field input-field">
-						    <div>
-						        <i class="material-icons">note_add</i>
-						        <input type="file">
-						    </div>
-						    <div class="file-path-wrapper">
-						        <input class="file-path validate" type="text" placeholder="archivo renta 3" id="renta3">
-						    </div>
-					    </div>
-				  	</form>
 				</div>
 			</div>
 			<div class="row">
+				<div class="col s12 col m4 offset-m4 center-align">
+					<div>
+					<p class="left-align"><strong>Domicilio:</strong></p>		
+						<input type="file" id="file2" name="file2[]" />
+							<br />
+						<output id="list2"></output>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
 				<div class="col s12 col m4 offset-m4">
-					<a href="cliente.html" id="send"><button  class="btn waves-effect waves-light boton-enviar" type="submit" name="action">Enviar 
+					<a href="cliente.html" click= id="send"><button  class="btn waves-effect waves-light boton-enviar" type="submit" name="action">Enviar 
 					   <i class="material-icons right">send</i>
 					</button></a>
 				</div>

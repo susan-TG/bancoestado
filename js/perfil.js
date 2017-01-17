@@ -1,23 +1,65 @@
+$(document).ready(function(){
+
+    //MUESTRA NOMBRE Y RUT 
+     var rutClient = localStorage.getItem('rut-save');
+     $('#rut-cliente').html(rutClient);
+
+  	 var nomClient = localStorage.getItem('nombre-save');
+     $('#nombre-cliente').html(nomClient)
+  
+});
 
 
-	$('#send').on('click', function(){
+function archivo(evt) {
+      var files = evt.target.files; // FileList object
+       
+        //Obtenemos la imagen del campo "file". 
+      for (var i = 0, f; f = files[i]; i++) {         
+           //Solo admitimos imágenes.
+           if (!f.type.match('image.*')) {
+                continue;
+           }
+       
+           var reader = new FileReader();
+           
+           reader.onload = (function(theFile) {
+               return function(e) {
+               // Creamos la imagen.
+                      document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+               };
+           })(f);
+ 
+           reader.readAsDataURL(f);
+       }
+}
+             
+      document.getElementById('files').addEventListener('change', archivo, false);
 
-	   var ciCliente = $('#ci').val();
-	   window.localStorage.setItem('ci-cliente', cicliente); // local storage ci
-
-	   var dom = $('#domicilio').val();
-	   window.localStorage.setItem('dom-cliente', domCliente); // local storage domicilio
-
-	   var rentaUno = $('#renta1').val();
-	   window.localStorage.setItem('sueldo1', rentaUno); // local storage renta1
-
-	   var rentaDos = $('#renta2').val();
-	   window.localStorage.setItem('sueldo2', rentaDos); // local storage renta2
-
-	   var rentaTres = $('#renta3').val();
-	   window.localStorage.setItem('sueldo3', rentaTres); // local storage renta3
-
-	});
+function file(evt) {
+      var file2 = evt.target.files; // FileList object
+       
+        //Obtenemos la imagen del campo "file". 
+      for (var i = 0, f; f = file2[i]; i++) {         
+           //Solo admitimos imágenes.
+           if (!f.type.match('image.*')) {
+                continue;
+           }
+       
+           var reader = new FileReader();
+           
+           reader.onload = (function(theFile) {
+               return function(e) {
+               // Creamos la imagen.
+                      document.getElementById("list2").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+               };
+           })(f);
+ 
+           reader.readAsDataURL(f);
+       }
+}
+             
+      document.getElementById('file2').addEventListener('change', file, false);
+	
 
 
 
