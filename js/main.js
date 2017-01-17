@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
-
-
 
 
 
@@ -34,4 +28,4 @@ img.src = "";
 var doc = new jsPDF();
 doc.addImage(img.onload(), 'JPEG', 15, 40, 180, 100);
 doc.save('Test.pdf');
->>>>>>> origin/maryelin
+

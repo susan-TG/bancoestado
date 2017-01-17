@@ -1,3 +1,11 @@
-.btn {
+.client-buttom {
 	margin-top: 60px;
+	width: 100%;
+	background-color: #f7901a;
+	color: white;
 }
+
+.client-buttom:hover {
+	background-color: #c11e15;
+}
+
