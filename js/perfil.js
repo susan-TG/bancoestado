@@ -7,3 +7,4 @@ $(document).ready(function(){
   	 var nomClient = localStorage.getItem('nombre-save');
      $('#nombre-cliente').html(nomClient);
 });
+
