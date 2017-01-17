@@ -67,3 +67,5 @@ function file(evt) {
 
 
 
+var imagen= document.getElementById('seis').value;
+localStorage.setItem("ci", img);
