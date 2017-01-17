@@ -31,3 +31,9 @@
     color:#F3F3F3 ;    
     margin-top: 13px;
 }
+
+.thumb{
+     height: 300px;
+     border: 1px solid #000;
+     margin: 10px 5px 0 0;
+}
