@@ -5,6 +5,9 @@
 
 }
 .btn:hover {
+	background-color: #f7901a;
+}
+.boton-enviar:hover {
 	background-color: #c11e15;
 }
 
@@ -14,8 +17,4 @@ li {
 
 }
 
-@media screen and (min-width: 768px) {
-	.multiple {
-		margin: 0;
-	}
-}
+

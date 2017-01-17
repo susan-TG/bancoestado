@@ -8,14 +8,15 @@
 .input-field{
 	margin-top:30px;
 	margin-bottom: 30px;
+	color:orange;
 }
 
-label .active{
-	background-color: #3D3FA3;
+label.active{
+	background-color: green;
 }
 
 .validate{
-	background-color: #3D3FA3;
+	background-color: transparent;
 }
 
 /*ESTILO DEL BOTON*/
@@ -40,22 +41,3 @@ label .active{
 	margin-top: 13px;
 }
 
-/*MEDIAS*/
-@media (max-width: 568px){
-	.toast{
-		
-		margin-left: 100px;
-	}
-}
-@media (max-width: 767px) {
-	.toast{
-		margin-top: -500px;
-		margin-left: 220px;
-	}
-}
-@media (max-width:1024px) {
-	.toast{
-		margin-top: -550px;
-		margin-left: 220px;
-	}
-}

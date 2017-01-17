@@ -1,3 +1,4 @@
+
 function validaRutCliente(rut){
  var newRut= document.getElementById('rut').value;
  var rexp = new RegExp(/^([0-9])+\-([kK0-9])+$/);
@@ -44,18 +45,19 @@ function validaRutCliente(rut){
             return true;
         }   
 }
+
 var cliente = [
         {
             nombre: "Jessica Diaz",
-            rut: 150005551
+            rut: 15000555-1
         },
         {
             nombre: "Paulina Buhrle",
-            rut: 150005552
+            rut: 15000555-2
         },
         {
             nombre: "Maryelin Quintanilla",
-            rut: 150005553
+            rut: 15000555-3
         }
     
     ];
@@ -71,6 +73,8 @@ $('#buscar').on('click', function(){
             return false;
         }
 
+     
+
         //iteracion en arreglo para identificar rut
         cliente.forEach(function(item,index){
           if(item.rut == rutCliente){
@@ -82,8 +86,6 @@ $('#buscar').on('click', function(){
           };
         });
 });
-
-
 
 
 

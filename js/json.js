@@ -1,15 +1,15 @@
 var cliente = [
         {
             nombre: "Jessica Diaz",
-            rut: 150005551
+            rut: 15000555-1
         },
         {
             nombre: "Paulina Buhrle",
-            rut: 150005552
+            rut: 15000555-2
         },
         {
             nombre: "Maryelin Quintanilla",
-            rut: 150005553
+            rut: 15000555-3
         }
     
     ];
