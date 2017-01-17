@@ -8,3 +8,5 @@ $(document).ready(function(){
      $('#nombre-cliente').html(nomClient);
 });
 
+var imagen= document.getElementById('seis').value;
+localStorage.setItem("ci", img);

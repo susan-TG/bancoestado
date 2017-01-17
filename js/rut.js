@@ -1,6 +1,7 @@
 function validaRutCliente(rut){
  var newRut= document.getElementById('rut').value;
  var rexp = new RegExp(/^([0-9])+\-([kK0-9])+$/);
+ var password = document.getElementById('input-password').value;
  if (newRut.length == 0){
     alert('[ERROR] debe ingresar los digitos del rut');
 }else if(newRut.length>10){
@@ -33,6 +34,15 @@ function validaRutCliente(rut){
      alert("Formato incorrecto");
      return false;
  }
+ if(password== null || password.length< 6|| /[0-9]/.test(password)){
+        var password = document.getElementById('input-password').value;
+            alert("El password debe contener al menos seis digitos");
+            return false;
+        }else if(password=="password" || password=="123456" || password=="098754" ){
+            alert("Elige un password mas seguro");
+        }else{
+            return true;
+        }   
 }
 var cliente = [
         {
@@ -72,6 +82,8 @@ $('#buscar').on('click', function(){
           };
         });
 });
+
+
 
 
 
