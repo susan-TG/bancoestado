@@ -1,0 +1,21 @@
+.btn {
+	width: 100%;
+	background-color: #f7901a;
+	margin: 0 auto;
+
+}
+.btn:hover {
+	background-color: #c11e15;
+}
+
+li {
+	
+	display: inline-block;
+
+}
+
+@media screen and (min-width: 768px) {
+	.multiple {
+		margin: 0;
+	}
+}
