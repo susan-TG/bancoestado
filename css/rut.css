@@ -1,0 +1,43 @@
+/*ESTILOS DEL RUT*/
+/*ESTILO DE LA IMAGEN*/
+.logo{
+	margin-top:56px;
+	text-align: center;
+}
+/*ESTILO DEL INPUT*/
+.input-field{
+	margin-top:30px;
+	margin-bottom: 30px;
+	color:orange;
+}
+
+label.active{
+	background-color: green;
+}
+
+.validate{
+	background-color: transparent;
+}
+
+/*ESTILO DEL BOTON*/
+.waves-effect{
+	background-color:#F7901A;
+	width: 100%;
+	height: 36px; 
+}
+
+.waves-effect:hover{
+    background-color: #c11e15 ;
+}
+
+/*ESTILO DEL nav*/
+.menu{
+	background-color: #F7901A;
+	width: 100%;
+	height: 50px;
+}
+.off{
+	color:#F3F3F3;	
+	margin-top: 13px;
+}
+
